@@ -1,0 +1,129 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color:beige;
+    display: flex;
+    justify-content: center;
+}
+#modal {
+    display: none;        /*hidden by default*/
+    position: fixed;      /*Stay in place*/
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;      /*enable scroll if needed*/
+    background-color: rgb(0,0,0,0.4); 
+  }
+
+.Modal-content{
+  background-color: white;
+  width:530px;
+  margin: auto;
+  border: 1px solid #888;
+  border-top: 5px solid #0060c7; 
+}
+
+.close {
+  color: black;
+  float: right;
+  font-size: 35px;
+  position:absolute;
+  right:5px;
+  bottom:25%;
+  /*float: right;*/
+}
+
+.close:hover {
+  color: grey;
+  cursor: pointer;
+}
+#warn{
+    border-bottom:1px solid black;
+    padding: 0;
+    position: relative;
+    padding-left: 20px;
+    padding-bottom: 0;
+}
+#content{
+    padding: 20px;
+    padding-top: 0%;
+    position: relative;
+
+}
+#content p{
+  font-size:13px;
+  font-weight: bold;
+}
+
+#button{
+    margin-left:75%;      /*stop,cancel button move right*/
+  }
+.primary-btn{
+  background-color: #0060c7;
+  border: 0;
+  color: white;
+  height: 20px;
+  cursor: pointer;
+}
+.secondary-btn{
+  color: #0060c7;
+  border:0;
+  height: 20px;
+  cursor: pointer;
+}
+ul{
+  display: flex;
+  padding: 0;
+}
+ul li{
+  list-style: none; /* to remove list bullet*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+ul li .text{
+  font-size: 14px;   
+  font-weight: bold;
+  color: #0060c7;
+}
+.icon{
+  margin:0 50px; /*gap between circle*/
+}
+ul li .step{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: darkgrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+  color: white;
+  position: relative;
+  cursor: pointer;
+}
+.step::after{
+  content: " ";        /*to get the line between each stepper component*/
+  position: absolute;
+  width: 75px;
+  height: 5px;
+  background-color: darkgrey;
+  right: 25px;
+ 
+}
+.one::after{
+  width: 0;
+  height: 0;
+}
+ul li .active{
+  background-color: #0060c7;
+}
+ul li .active::after{
+  background-color: #0060c7;
+}
+
+

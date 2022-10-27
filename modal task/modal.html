@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link rel="stylesheet" href="modal_style.css">
+    <script src="https://kit.fontawesome.com/712347c9b6.js" crossorigin="anonymous"></script>   
+</head>
+<body>
+    <button id="btn"> Click to open modal</button>
+    <div id="modal">
+    <div class="Modal-content">
+    <div id="warn">
+        <span class="close">&times;</span>       
+        <h4><i class="fa-solid fa-circle-exclamation"></i> Connection lost.Trying to reconnect.</h4>
+    </div>
+    <div id="content">
+        <h3> Lost Connection to UltraVNC.</h3>
+        <p>Make sure the UltraVnc software is running on your measurement PC.<br>
+        UltraVnc icon visible in Windows System Tray.</p>
+      <div id="component"> 
+        <ul>
+            <li> 
+                <i class="icon"></i>
+                <div class="active step one">
+                    <i class="fa-sharp fa-solid fa-arrows-spin"></i>
+                </div>
+                <p class="text">Base setup</p>
+            </li>
+            <li>
+                <i class="icon"></i> 
+                <div class="active step two">
+                    <i class="fa-solid fa-box"></i>
+                </div>
+                <p class="text">Gateway</p>
+            </li>
+            <li>
+                <i class="icon"></i>
+                <div class="active step three">
+                    <i class="fa-sharp fa-solid fa-car"></i>
+                </div>
+                <p class="text">Car PC</p>
+            </li>
+            <li>
+                <i class="icon"></i>
+                <div class="step four">
+                    <i class="fa-sharp fa-solid fa-eye"></i> 
+                </div>
+                <p class="text">UltraVNC</p>
+            </li>
+            <li>
+                <i class="icon"></i>
+                <div class="step five">
+                    <i class="fa-sharp fa-solid fa-toolbox"></i>
+                </div>
+                 <p class="text">Stream</p>
+            </li>
+        </ul>
+     
+    </div>
+    <div id="button">
+        <button class="primary-btn">Stop</button> 
+        <button class="secondary-btn">Cancel</button> 
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+</body>
+<script src="modal.js"></script>
+</html>
